@@ -10,10 +10,12 @@
 
 body{
     background-image: linear-gradient(to top, #0e0172 0%, #940215 100%);
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 
 main{
@@ -26,7 +28,7 @@ main{
 
 .resume{
     display: flex;
-    padding: 10px 0;
+    padding: 30px 0;
     gap: 40px;
     width: 100%;
     justify-content: center;
@@ -39,13 +41,13 @@ main{
     box-shadow: 0px 0px 5px rgb(255, 255, 255, 0.407);
     border-radius: 10px;
     padding: 10px;
-    width: 150px;
+    width: 25%;
 }
 
 .newItem{
     display: flex;
-    gap: 10px;
-    align-items: end;
+    gap: 5px;
+    align-items: flex-end;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
@@ -55,6 +57,7 @@ main{
     color: black;
     display: flex;
     flex-direction: column;
+    width: 90px;
 }
 
 .newItem>button{
@@ -64,7 +67,8 @@ main{
     padding: 0 15px;
     border-radius: 5px;
     cursor: pointer;
-    height: 34px;
+    height: 30px;
+    align-items: center;
 }
 
 input, select{
@@ -113,7 +117,7 @@ i{
 -----------------*/
 
 .columnAction{
-    width: 40px;
+    width: 7%;
     text-align: center;
 }
 
@@ -127,6 +131,6 @@ i{
 }
 
 .columnType{
-    width: 80px;
+    width: 20%;
     text-align: center;
 }
