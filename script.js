@@ -42,7 +42,7 @@ function insertItem(item, index){
         <td>${item.desc}</td>
         <td>R$ ${item.amount}</td>
         <td class="columnType">${
-            item.type === "Entrada"
+            item.type === "Entrou"
             ? '<i class="bx bxs-chevron-up-circle"></i>'
             : '<i class="bx bxs-chevron-down-circle"></i>'
         }</td>
@@ -66,11 +66,11 @@ function loadItens(){
 
 function getTotals(){
     const amountIncomes = items
-        .filter((item)=> item.type === "Entrada")
+        .filter((item)=> item.type === "Entrou")
         .map((transaction)=> Number(transaction.amount));
     
     const amountExpenses = items
-        .filter((item)=>item.type === "Saída")
+        .filter((item)=>item.type === "Saiu")
         .map((transaction)=>Number(transaction.amount));
 
     const totalIncomes = amountIncomes
